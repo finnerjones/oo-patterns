@@ -5,14 +5,21 @@ Template Method Motivation
 - recipe-like (tea & coffe)
 
 from page 276
-Coffee recipe:
+Method for preparing Coffee (a recipe):
 	1) boil water
 	2) brew coffee in boiling water
 	3) pour coffee in cup
 	4) add sugar and milk
 	
-Tea recipe:
+Method for preparing Tea (a recipe):
 	1) boil water
 	2) Steep tea in boiling water
 	3) pour tea in cup
 	4) add lemon
+
+(what does both method above have in common?)	
+Method for preparing a drink (a recipe)
+	1) boil water
+	2) brew					* different per drink
+	3) pourInCup
+	4) add condiments		* different per drink
