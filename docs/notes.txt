@@ -1,0 +1,18 @@
+Strategy Motivation
+
+Template Method Motivation
+- encapsulating algorithms
+- recipe-like (tea & coffe)
+
+from page 276
+Coffee recipe:
+	1) boil water
+	2) brew coffee in boiling water
+	3) pour coffee in cup
+	4) add sugar and milk
+	
+Tea recipe:
+	1) boil water
+	2) Steep tea in boiling water
+	3) pour tea in cup
+	4) add lemon
