@@ -1,5 +1,34 @@
 Strategy Motivation
 
+Original Duck architecture:
+class Duck
+  swim()		* same for all ducks
+  quack()		* all duck quack
+  display()		* subclasses will have to override
+  
+class Mallard extends Duck
+  display() 	* "I'm a cute Mallard"
+
+class ParkDuck extends Duck
+  display()		* "I'm a happy park duck"  
+
+BUT say you want to add behaviour..  like fly()
+- then implement it in the superclasss and all csubclasses will get it
+Now we want a RubberDuck (his name is Declan)
+This is problematic, Declan cannot fly or quack.
+
+class RubberDuck extends Duck
+	quack()			* to say squeak squeak
+	fly()			* do nothing
+	display()		* "Hi my name is Declan!"
+
+And we want wooden decoy ducks ..
+
+class WoodenDecoyDuck extends Duck
+	quack()			* do nothing
+	fly()			* do nothing
+	display()		* "Please don't shoot!"
+--------------------------------------------------
 Template Method Motivation
 - encapsulating algorithms
 - recipe-like (tea & coffe)
@@ -23,3 +52,9 @@ Method for preparing a drink (a recipe)
 	2) brew					* different per drink
 	3) pourInCup
 	4) add condiments		* different per drink
+	
+Some Design Principles
+
+* Identify the aspects of your application that vary and separate them from what stays the same (page 9)
+* Program to an interface, not an implementation (page 11)
+ 
